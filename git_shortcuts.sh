@@ -63,7 +63,7 @@ alias gcn='git clean -n'             # removes custom/all untracked files (-n fo
 alias gcf='git clean -f'             # removes custom/all untracked files (-f to force)
 alias gxu='git reset'                # (+stagedFile, empty) unstage all files OR stagedFile: [HEAD] --mixed
 alias gxj='git reset --hard'         # (+ID, empty) jumps to ID or removes modified files in working dir and INDEX
-alias gxz='git reset HEAD^ --soft'   # go back 1 commit in time, keeps modifications in INDEX (like a Ctrl+Z)
+alias gxb='git reset HEAD^ --soft'   # go back 1 commit in time, keeps modifications in INDEX
 # git checkout [--] (.|file)         # un-do file changes in WD (use -- when it doesn't work, paths for example),
                                      # or use '.' to undo all WD (same as git checkout -f or git reset --hard)
 
