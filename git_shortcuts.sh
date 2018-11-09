@@ -37,7 +37,7 @@ alias gb='git branch'                   # (opc BranchName) Show local branches, 
                                         # remote (-r), all (-a), rename branches with "gb -m develop developing"
 alias gm='git merge'                    # (+COMMIT) Merge current branch to COMMIT (fast-forward) or use --no-ff flag
 alias grb='git rebase'                  # (+COMMIT) Rebase current branch on top of COMMIT
-alias gri='git rebase -i'               # (+COMMIT) Re-design history interactively from COMMIT. Add --root to use it.
+alias gri='git rebase -i'               # (+COMMIT/--root) Re-design history interactively from COMMIT.
 alias gp='git push'                     # use -f to mimic current branch; delete branches: gp --delete origin branchName
 alias gpt='git push && git push --tags' # pushes commits and tags in one command
 alias gf='git fetch -p'                 # usage: gf john (-p prune tracking); -a to fetch all; uses "origin" by default
