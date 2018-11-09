@@ -14,7 +14,7 @@ alias gc='git commit -m'
 alias gca='git commit -am'
 alias gcm='git commit --amend'        # add more files to last commit or edit the commited message
 alias gt='git tag'                    # usage: gt -a v1.0; gt -d v1.0 (delete tag); tag after commit: gt v1.2 fceb02
-alias gtd='git push --delete origin'  # (+tagName) remove online tag in origin
+alias god='git push --delete origin'  # (+tagName) ask origin to delete a tag/branch
 
 
 ########## information ##########
@@ -33,7 +33,7 @@ alias gfh='git log -p'         # (+filename) Outputs the file history patches fo
 ########## branches ##########
 alias gco='git checkout'                # jump to branches or IDs. Add '-b' create a new branch (opc FromBranch)
                                         # (+filename) remove it from WD; with -f, throw away local changes
-alias gb='git branch'                   # (opc BranchName) Show local branches, delete it (-d, -D) or gtd for remote,
+alias gb='git branch'                   # (opc BranchName) Show local branches, delete it (-d, -D) or god for remote,
                                         # remote (-r), all (-a), rename branches with "gb -m develop developing"
 alias gm='git merge'                    # (+COMMIT) Merge current branch to COMMIT (fast-forward) or use --no-ff flag
 alias grb='git rebase'                  # (+COMMIT) Rebase current branch on top of COMMIT
