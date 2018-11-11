@@ -32,16 +32,17 @@ alias gfh='git log -p'         # (+filename) Outputs the file history patches fo
 
 
 ########## branches ##########
-alias gco='git checkout'                # jump to branches or IDs. Add '-b' create a new branch (opc FromBranch)
-                                        # (+filename) remove it from WD; with -f, throw away local changes
-alias gb='git branch'                   # (opc BranchName) Show local branches, delete it (-d, -D) or god for remote,
-                                        # remote (-r), all (-a), rename branches with "gb -m develop developing"
-alias gm='git merge'                    # (+COMMIT) Merge current branch to COMMIT (fast-forward) or use --no-ff flag
-alias grb='git rebase'                  # (+COMMIT) Rebase current branch on top of COMMIT
-alias gri='git rebase -i'               # (+COMMIT/--root) Re-design history interactively from COMMIT.
-alias gp='git push && git push --tags'  # pushes commits and tags in one command; (-f) to mimic current branch
-alias gf='git fetch -p'                 # usage: gf john (-p prune tracking); -a to fetch all; uses "origin" by default
-alias gpu='git pull'                    # fetches & merges (use it with care), --rebase opt is a great one-command tool
+alias gco='git checkout'                    # jump to branches or IDs. Add '-b' create a new branch (opc FromBranch)
+                                            # (+filename) remove it from WD; with -f, throw away local changes
+alias gb='git branch'                       # (opc BranchName) Show local branches, delete it (-d, -D) or god for remote,
+                                            # remote (-r), all (-a), rename branches with "gb -m develop developing"
+alias gm='git merge'                        # (+COMMIT) Merge current branch to COMMIT (fast-forward) or use --no-ff flag
+alias grb='git rebase'                      # (+COMMIT) Rebase current branch on top of COMMIT
+alias gri='git rebase -i'                   # (+COMMIT/--root) Re-design history interactively from COMMIT.
+alias gp='git push && git push --tags'      # pushes commits and tags in one command; (-f) to mimic current branch
+alias gpf='git push -f && git push --tags'  # force push to mimic current branch
+alias gf='git fetch -p'                     # usage: gf john (-p prune tracking); -a to fetch all; uses "origin" by default
+alias gpu='git pull'                        # fetches & merges (use it with care), --rebase opt is a great one-command tool
 
 
 ########## stash commands ##########
