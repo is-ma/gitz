@@ -12,9 +12,10 @@ alias ga='git add'
 alias gaa='git add -A'
 alias gc='git commit -m'
 alias gca='git commit -am'
-alias gcm='git commit --amend'        # add more files to last commit or edit the commited message
-alias gt='git tag'                    # usage: gt -a v1.0; gt -d v1.0 (delete tag); tag after commit: gt v1.2 fceb02
-alias god='git push --delete origin'  # (+tagName) ask origin to delete a tag/branch
+alias gaac='git add -A && git commit -m'  # common combination
+alias gcm='git commit --amend'            # add more files to last commit or edit the commited message
+alias gt='git tag'                        # usage: gt -a v1.0; gt -d v1.0 (delete tag); tag after commit: gt v1.2 fceb02
+alias god='git push --delete origin'      # (+tagName) ask origin to delete a tag/branch
 
 
 ########## information ##########
