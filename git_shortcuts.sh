@@ -59,7 +59,7 @@ alias gsp='git stash pop'               # takes (and delete) the top of the list
 ########## undoing things ##########
 alias gcn='git clean -n'             # removes custom/all untracked files (-n for dry-run)
 alias gcf='git clean -f'             # removes custom/all untracked files (-f to force)
-alias gxu='git reset'                # (+stagedFile, empty) unstage stagedFile or all files
+alias gr='git reset'                 # (+stagedFile, empty) unstage stagedFile or all files
 alias gxj='git reset --hard'         # (+ID, empty) jumps to ID or removes modified files in working dir and INDEX
 alias gxb='git reset HEAD^ --soft'   # go back 1 commit in time, keeps modifications in INDEX
 # git checkout [--] (.|file)         # un-do file changes in WD (use -- when it doesn't work, paths for example),
