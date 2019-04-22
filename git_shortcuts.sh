@@ -8,7 +8,8 @@ export VISUAL=vim  # use VIM instead of nano as a default editor
 
 ########## basic commands ##########
 alias gs='git status -s'
-alias ga='git add'
+alias ga='git add'                        # Add to staged area.
+alias gap='git add -p'                    # Edit the hunks; keep (+), discard everything else.
 alias gaa='git add -A'
 alias gc='git commit -m'                  # You could add (--allow-empty).
 alias gca='git commit -am'
@@ -32,7 +33,8 @@ alias gfh='git log -p'         # (+filename) Outputs the file history patches fo
 
 ########## branches ##########
 alias gco='git checkout'                    # Jump to branches or IDs. Add '-b' create a new branch (opc FromBranch).
-                                            # (+filename) Remove changes from WD; with -f, throw away local changes.
+                                            # (+filename) Remove changes from WD; with -f, throw away local changes,
+					    # (-p) interactively discard hunks.
 alias gb='git branch'                       # (opc BranchName) Show local branches, delete it (-d, -D) or god for remote,
                                             # remote (-r), all (-a), rename branches with "gb -m develop developing".
 alias gm='git merge'                        # (+COMMIT) Merge current branch to COMMIT (fast-forward) or use --no-ff flag.
@@ -63,7 +65,8 @@ alias gsp='git stash pop'               # Takes (and delete) the top of the list
 alias gre='git revert'               # (+ID, empty) Creates a new commit reverting +ID (or HEAD).
 alias gcn='git clean -n'             # Removes custom/all untracked files (-n for dry-run).
 alias gcf='git clean -f'             # Removes custom/all untracked files (-f to force).
-alias gr='git reset'                 # (+stagedFile, empty) Unstage stagedFile or all files.
+alias gr='git reset'                 # (+stagedFile, empty) Unstage stagedFile or all files,
+alias grp='git reset -p'             # Edit the hunks; dicard what you want to commit next.
 alias gxj='git reset --hard'         # (+ID, empty) Jumps to ID or removes modified files in working dir and INDEX.
 alias gxb='git reset HEAD^ --soft'   # Go back 1 commit in time, keeps modifications in INDEX.
 alias grv='git revert'               # (+ID) Reverts ID; (ID ID2 ID3) reverts ids; (BASE..ID) FROM BASE up to ID.
