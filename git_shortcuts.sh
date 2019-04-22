@@ -58,6 +58,7 @@ alias gsp='git stash pop'               # Takes (and delete) the top of the list
 
 
 ########## undoing things ##########
+alias gre='git revert'               # (+ID, empty) Creates a new commit reverting +ID (or HEAD).
 alias gcn='git clean -n'             # Removes custom/all untracked files (-n for dry-run).
 alias gcf='git clean -f'             # Removes custom/all untracked files (-f to force).
 alias gr='git reset'                 # (+stagedFile, empty) Unstage stagedFile or all files.
