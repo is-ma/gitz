@@ -39,6 +39,7 @@ alias gm='git merge'                        # (+COMMIT) Merge current branch to 
 alias grb='git rebase'                      # (+COMMIT/+COMMIT +FROM) Rebase current branch on top of COMMIT, if +FROM is
                                             # specified it will first make a 'git checkout +FROM' and then the rebase.
 alias gri='git rebase -i'                   # (+COMMIT/--root/empty) Re-design history interactively from COMMIT.
+alias gria='git rebase -i --autosquash'     # (+COMMIT/--root/empty) Uses 'squash! msg' or 'fixup! msg' to format gri.
 alias gp='git push && git push --tags'      # Pushes commits and tags in one command; (-f) to mimic current branch.
 alias gpf='git push -f && git push --tags'  # Force push to mimic current branch.
 alias gf='git fetch -p'                     # Usage: gf john (-p prune tracking); -a to fetch all; uses "origin" by default.
