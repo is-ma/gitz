@@ -15,7 +15,7 @@ alias gca='git commit -am'                # Commit all modified, tracked files. 
 alias gaac='git add -A && git commit -m'  # Common combination.
 alias gcm='git commit --amend'            # Add more files to last commit or edit the commited message.
 alias gt='git tag'                        # Usage: gt v1.0; gt -d v1.0 (delete tag); tag after commit: gt v1.2 fceb02.
-alias gah='git add --prune'               # Edit the hunks; stage only the (+) lines.
+alias gah='git add --patch'               # Edit the hunks; stage only the (+) lines.
 
 
 ########## information ##########
@@ -66,7 +66,7 @@ alias gsp='git stash pop'               # Takes (and delete) the top of the list
 alias gcn='git clean -n'             # Removes custom/all untracked files (-n for dry-run).
 alias gcf='git clean -f'             # Removes custom/all untracked files (-f to force).
 alias gr='git reset'                 # (+stagedFile, empty) Unstage stagedFile or all files.
-alias grh='git reset --prune'        # Edit the hunks; stage only the " " lines.
+alias grh='git reset --patch'        # Edit the hunks; stage only the " " lines.
 alias gxj='git reset --hard'         # (+ID, empty) Jumps to ID or removes modified files in WD & INDEX.
 alias gxb='git reset HEAD^ --soft'   # Go back 1 commit, keeps modifications in INDEX.
 alias grv='git revert'               # (+ID ID2 ID3) Creates a new commit reverting IDs (or HEAD).
