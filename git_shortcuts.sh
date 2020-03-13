@@ -82,3 +82,14 @@ alias grv='git revert'               # (+ID ID2 ID3) Creates a new commit revert
 # git archive         # Removes the .git dir; it gives you a simple snapshot to share/backup,
                       # ex: git archive master --format=zip --output=../website-20170130.zip
 
+
+########## reference: Insert a commit before the root commit in Git ##########
+########## https://stackoverflow.com/a/647451 ##########
+## first you need a new empty branch; let's call it `newroot`
+# git checkout --orphan newroot
+# git rm -rf .
+
+## then you apply the same steps
+# git commit --allow-empty -m 'root commit'
+# git rebase --onto newroot --root master
+# git branch -d newroot
