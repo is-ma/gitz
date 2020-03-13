@@ -44,8 +44,6 @@ alias gria='git rebase -i --autosquash'     # (+COMMIT/--root) Uses 'squash! msg
 alias gp='git push && git push --tags'      # Pushes commits and tags in one command.
 alias gpf='git push -f && git push --tags'  # Force push to mimic current branch.
 alias gf='git fetch -p'                     # Usage: gf john (-p prune tracking); -a to fetch all; uses "origin" by default.
-alias gpu='git pull'                        # Runs 'git fetch', then 'git merge';
-alias gpur='git pull --rebase'              # Runs 'git fetch', then 'git rebase';
                                             # tip: for long term changes, its probably best to merge, but for smaller changesets,
                                             #      history will stay cleaner with rebase.
 
