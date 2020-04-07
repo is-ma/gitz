@@ -63,15 +63,16 @@ alias gsp='git stash pop'               # Takes (and delete) the top of the list
 
 
 ########## undoing things ##########
-alias gcn='git clean -n'             # Removes custom/all untracked files (-n for dry-run).
-alias gcf='git clean -f'             # Removes custom/all untracked files (-f to force).
-alias gr='git reset'                 # (+stagedFile, empty) Unstage stagedFile or all files.
-alias grh='git reset --patch'        # Edit the hunks; stage only the " " lines.
-alias gxj='git reset --hard'         # (+ID, empty) Jumps to ID or removes modified files in WD & INDEX.
-alias gxb='git reset HEAD^ --soft'   # Go back 1 commit, keeps modifications in INDEX.
-alias grv='git revert'               # (+ID ID2 ID3) Creates a new commit reverting IDs (or HEAD).
-# git checkout [--] (.|file)         # Un-do file changes in WD (use -- when it doesn't work, paths for example),
-                                     # or use '.' to undo all WD (same as git checkout -f or git reset --hard).
+alias gcn='git clean -n'              # Removes custom/all untracked files (-n for dry-run).
+alias gcf='git clean -f'              # Removes custom/all untracked files (-f to force).
+alias gr='git reset'                  # (+stagedFile, empty) Unstage stagedFile or all files.
+alias grh='git reset --patch'         # Edit the hunks; stage only the " " lines.
+alias gxj='git reset --hard'          # (+ID, empty) Jumps to ID or removes modified files in WD & INDEX.
+alias gxb='git reset HEAD^ --soft'    # Go back 1 commit, keeps modifications in INDEX.
+alias grv='git revert'                # (+ID ID2 ID3) Creates a new commit reverting IDs (or HEAD).
+alias grl='git rev-list -n 1 HEAD --' # (+FILE_PATH) Get the ID of the deleted commit; then «gco ID^».
+# git checkout [--] (.|file)          # Un-do file changes in WD (use -- when it doesn't work, paths for example),
+                                      # or use '.' to undo all WD (same as git checkout -f or git reset --hard).
 
 ########## final references ##########
 # git init            # Initialize repository. Add --bare for "storage facility" without a working dir.
