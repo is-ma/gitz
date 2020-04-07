@@ -38,6 +38,7 @@ alias gb='git branch'                       # (opc BranchName) Show local branch
 alias gm='git merge'                        # (+COMMIT) Merge current branch to COMMIT (fast-forward) or use --no-ff flag.
 alias god='git push --delete origin'        # (+tagName) Goes to origin and delete tags/branches.
 alias grb='git rebase'                      # (+COMMIT) Rebase current branch on top of COMMIT.
+alias grbo='git rebase --onto'              # (+BASE +COMMIT) Mount into BASE commits from COMMIT base (non-inclusive) up to branch.
 alias grbc='git rebase --continue'          # Popular rebase option.
 alias gri='git rebase -i'                   # (+COMMIT/--root) Redesign history interactively from COMMIT.
 alias gria='git rebase -i --autosquash'     # (+COMMIT/--root) Uses 'squash! msg' or 'fixup! msg' to format <gri>.
