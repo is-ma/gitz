@@ -70,7 +70,7 @@ alias grh='git reset --patch'         # Edit the hunks; make up added lines for 
 alias gxj='git reset --hard'          # (+ID, empty) Jumps to ID or removes modified files in WD & INDEX.
 alias gxb='git reset HEAD^ --soft'    # Go back 1 commit, keeps modifications in INDEX.
 alias grv='git revert'                # (+ID ID2 ID3) Creates a new commit reverting IDs (or HEAD).
-alias grl='git rev-list -n 1 HEAD --' # (+FILE_PATH) Get the ID of the deleted file; then «gco ID^».
+alias grl='git rev-list -n 1 HEAD --' # (+FILE_PATH) Get the ID of the deleted commit; then «gco ID^».
 # git checkout [--] (.|file)          # Un-do file changes in WD (use -- when it doesn't work, paths for example),
                                       # or use '.' to undo all WD (same as git checkout -f or git reset --hard).
 
