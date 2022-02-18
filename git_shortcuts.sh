@@ -60,6 +60,8 @@ alias gsp='git stash pop'               # Takes (and delete) the top of the list
 # git config --local --edit             # (default) Stores configuration in .git/config
 # git config --local user.name "Example"
 # git config --local user.email "user@example.org"
+# git config --local --list             # Shows the .git/config configuration
+# git config --global --list            # Shows the ~/.gitconfig configuration
 
 
 ########## undoing things ##########
