@@ -33,7 +33,7 @@ alias gfh='git log -p'         # (+filename) Outputs the file history patches fo
 ########## branches ##########
 alias gco='git checkout'                    # Jump to branches or IDs. Add '-b' to create a new branch; (+file) remove changes from WD;
                                             # with -f, throw away local changes (WD & staged), like <gxj>.
-alias gb='git branch'                       # (opc BranchName) Show local branches; remove (-r), all (-a);
+alias gb='git branch'                       # (opc BranchName) Show local branches; all (-a);
                                             # rename (-m) OLD NEW; delete it (-d, -D) or <god> for remote.
 alias gm='git merge'                        # (+COMMIT) Merge current branch to COMMIT (fast-forward) or use --no-ff flag.
 alias god='git push --delete origin'        # (+tagName) Goes to origin and delete tags/branches.
