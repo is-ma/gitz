@@ -15,7 +15,7 @@ alias gca='git commit -am'                # Commit all modified, tracked files. 
 alias gaac='git add -A && git commit -m'  # Common combination.
 alias gcm='git commit --amend'            # Add more files to last commit or edit the commited message.
 alias gt='git tag'                        # Usage: gt v1.0; gt -d v1.0 (delete tag); tag after commit: gt v1.2 fceb02.
-alias gah='git add --patch'               # Edit the hunks; delete added lines for later commits. [+ -> delete]
+alias gap='git add --patch'               # Edit the hunks; delete added lines for later commits. [+ -> delete]
 
 
 ########## information ##########
