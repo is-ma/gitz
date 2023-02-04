@@ -7,7 +7,7 @@ export VISUAL=vim  # use VIM instead of nano as a default editor
 
 
 ########## basic commands ##########
-alias gs='git status -s'                  # Show untracked files and differences between HEAD & WD, WD & index.
+alias gs='git status -s'                  # Show untracked files and differences between HEAD & WD, WD & INDEX.
 alias ga='git add'                        # Add files to staged area.
 alias gaa='git add -A'                    # Add files to staged area (all files).
 alias gc='git commit -m'                  # Commit staged files with a message.
@@ -32,7 +32,7 @@ alias gfh='git log -p'         # (+filename) Outputs the file history patches fo
 
 ########## branches ##########
 alias gco='git checkout'                    # Jump to branches or IDs. Add '-b' to create a new branch; (+file) remove changes from WD;
-                                            # with -f, throw away local changes (WD & staged), like <gxj>.
+                                            # with -f, throw away local changes (WD & INDEX), like <gxj>.
 alias gb='git branch'                       # (opc BranchName) Show local branches; all (-a);
                                             # rename (-m) OLD NEW; delete it (-d, -D) or <god> for remote.
 alias gm='git merge'                        # (+COMMIT) Merge current branch to COMMIT (fast-forward) or use --no-ff flag.
