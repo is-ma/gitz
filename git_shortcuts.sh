@@ -49,7 +49,7 @@ alias gf='git fetch -p'                     # Usage: gf john (-p prune tracking)
                                             # tip: for long term changes, its probably best to merge, but for smaller changesets,
                                             #      history will stay cleaner with rebase.
 # git push <remote> <branch>                # Push branch to remote.
-# git pull                                  # Very common, but enough powerful to keep it without shortcut (just to be mindful).					    
+# git pull                                  # Equivalent of git fetch (get remote data) and git merge (merge to your branch).
 
 
 ########## stash commands ##########
