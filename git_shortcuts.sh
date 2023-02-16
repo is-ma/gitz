@@ -28,6 +28,7 @@ alias gds='git diff --staged'  # INDEXED modifs above HEAD (WD not included).
 alias gdh='git diff HEAD'      # Modifs [WD+INDEX] above HEAD.
 alias gsh='git show'           # (+ID|<none>) Show commit modifications on ID/HEAD.
 alias gfh='git log -p'         # (+filename) Outputs the file history patches for each log entry.
+alias gg='git grep'            # "search", searches inside your repository; -e se[aeiou]rch, use regexp to search.
 
 
 ########## branches ##########
