@@ -7,7 +7,9 @@
 
 ```bash
 git clone https://github.com/is-ma/git_shortcuts.git ~/.git_shortcuts > /dev/null 2>&1
-echo -e "\nsource ~/.git_shortcuts/git_shortcuts.sh" >> ~/.bashrc
+echo ""
+echo "### GIT_SHORTCUTS ###"
+echo "source ~/.git_shortcuts/git_shortcuts.sh" >> ~/.bashrc
 source ~/.bashrc
 ```
 
@@ -15,6 +17,8 @@ source ~/.bashrc
 
 ```bash
 git clone https://github.com/is-ma/git_shortcuts.git ~/.git_shortcuts > /dev/null 2>&1
-echo -e "\nsource ~/.git_shortcuts/git_shortcuts.sh" >> ~/.bash_profile
+echo ""
+echo "### GIT_SHORTCUTS ###"
+echo "source ~/.git_shortcuts/git_shortcuts.sh" >> ~/.bash_profile
 source ~/.bash_profile
 ```
