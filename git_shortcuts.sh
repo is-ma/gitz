@@ -32,11 +32,12 @@ alias gl='git log --oneline --graph --decorate --all -n 10'           # Top 10, 
 alias gl3='git log --oneline -n 3'                                    # Top 3, simplified.
 alias gll='git log --oneline --graph --decorate --all'                # All git log, complete info.
 alias gl3s='git log --oneline --graph --decorate --all -n 3 --stat'    # Top 3, with stats.
-alias gd='git diff'            # Modifs on tracked files (WD, not staged) above HEAD. Usages: gd; gd <OLD> <NEW>.
-alias gds='git diff --staged'  # INDEXED modifs above HEAD (WD not included).
-alias gdh='git diff HEAD'      # Modifs [WD+INDEX] above HEAD.
-alias gsh='git show'           # (+ID|<none>) Show commit modifications on ID/HEAD.
-alias gfh='git log -p'         # (+filename) Outputs the file history patches for each log entry.
+alias gd='git diff'             # Modifs on tracked files (WD, not staged) above HEAD. Usages: gd; gd <OLD> <NEW>.
+alias gds='git diff --staged'   # INDEXED modifs above HEAD (WD not included).
+alias gdh='git diff HEAD'       # Modifs [WD+INDEX] above HEAD.
+alias gsh='git show'            # (+ID|<none>) Show commit modifications on ID/HEAD.
+alias gfh='git log -p'          # (+filename) Outputs the file history patches for each log entry.
+alias gch='git log --follow --' # (+filename) List all commits that changed a specific file.
 alias gg='git grep'            # "search", searches inside your repository; -e se[aeiou]rch, use regexp to search.
 
 
