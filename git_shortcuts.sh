@@ -15,6 +15,8 @@ alias gaa='git add -A'                    # Add files to staged area (all files)
 alias sgaa='sudo git add -A'
 alias gc='git commit -m'                  # Commit staged files with a message.
 alias sgc='sudo git commit -m'
+alias gcp='gc && gp'                      # Shortcut: commit and immediately push
+alias sgcp='sgc && sgp'
 alias gca='git commit -am'                # Commit all modified, tracked files. With a message.
 alias sgca='sudo git commit -am'
 alias gaac='git add -A && git commit -m'  # Common combination.
@@ -39,6 +41,7 @@ alias gsh='git show'            # (+ID|<none>) Show commit modifications on ID/H
 alias gfh='git log -p'          # (+filename) Outputs the file history patches for each log entry.
 alias gch='git log --follow --' # (+filename) List all commits that changed a specific file.
 alias gg='git grep'            # "search", searches inside your repository; -e se[aeiou]rch, use regexp to search.
+alias gtree='git ls-tree --full-tree --name-only -r HEAD' # show tracked files
 
 
 ########## branches ##########
