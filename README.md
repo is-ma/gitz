@@ -6,19 +6,19 @@
 ## Installation for Linux distributions
 
 ```bash
-git clone https://github.com/is-ma/git_shortcuts.git ~/.git_shortcuts > /dev/null 2>&1
+git clone https://github.com/is-ma/gitz.git ~/.is-ma/gitz > /dev/null 2>&1
 echo ""
-echo "### GIT_SHORTCUTS ###"
-echo "source ~/.git_shortcuts/git_shortcuts.sh" >> ~/.bashrc
+echo "### IS-MA: GITZ ###"
+echo "source ~/.is-ma/gitz/shortcuts.sh" >> ~/.bashrc
 source ~/.bashrc
 ```
 
 ## Installation for Mac
 
 ```bash
-git clone https://github.com/is-ma/git_shortcuts.git ~/.git_shortcuts > /dev/null 2>&1
+git clone https://github.com/is-ma/gitz.git ~/.is-ma/gitz > /dev/null 2>&1
 echo ""
-echo "### GIT_SHORTCUTS ###"
-echo "source ~/.git_shortcuts/git_shortcuts.sh" >> ~/.bash_profile
+echo "### IS-MA: GITZ ###"
+echo "source ~/.is-ma/gitz/shortcuts.sh" >> ~/.bash_profile
 source ~/.bash_profile
 ```
