@@ -7,8 +7,8 @@
 
 ```bash
 git clone https://github.com/is-ma/gitz.git ~/.is-ma/gitz > /dev/null 2>&1
-echo ""
-echo "### IS-MA: GITZ ###"
+echo "" >> ~/.bashrc
+echo "### IS-MA: GITZ ###" >> ~/.bashrc
 echo "source ~/.is-ma/gitz/shortcuts.sh" >> ~/.bashrc
 source ~/.bashrc
 ```
@@ -17,8 +17,8 @@ source ~/.bashrc
 
 ```bash
 git clone https://github.com/is-ma/gitz.git ~/.is-ma/gitz > /dev/null 2>&1
-echo ""
-echo "### IS-MA: GITZ ###"
+echo "" >> ~/.bash_profile
+echo "### IS-MA: GITZ ###" >> ~/.bash_profile
 echo "source ~/.is-ma/gitz/shortcuts.sh" >> ~/.bash_profile
 source ~/.bash_profile
 ```
