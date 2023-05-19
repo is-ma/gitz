@@ -1,3 +1,5 @@
-echo "" >> ~/.bashrc
-echo "### IS-MA: GITZ ###" >> ~/.bashrc
-echo "source ~/.is-ma/gitz/shortcuts.sh" >> ~/.bashrc
+cat << EOF >> ~/.bashrc
+
+### IS-MA: GITZ ###
+source ~/.is-ma/gitz/shortcuts.sh
+EOF
