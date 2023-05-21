@@ -1,5 +1,5 @@
 cat << EOF >> ~/.bash_profile
-
+#
 ### IS-MA: GITZ ###
 source ~/.is-ma/gitz/shortcuts.sh
 EOF
