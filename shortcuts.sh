@@ -20,8 +20,8 @@ alias gap='git add --patch'               # Edit the hunks; delete added lines f
 
 ########## information ##########
 alias gl='git log --oneline --graph --decorate --all -n 10'           # Top 10, complete info.
-alias gl3='git log --oneline -n 3'                                    # Top 3, simplified.
 alias gll='git log --oneline --graph --decorate --all'                # All git log, complete info.
+alias gl3='git log --oneline -n 3'                                    # Top 3, simplified.
 alias gl3s='git log --oneline --graph --decorate --all -n 3 --stat'    # Top 3, with stats.
 alias gd='git diff'             # Modifs on tracked files (WD, not staged) above HEAD. Usages: gd; gd <OLD> <NEW>.
 alias gds='git diff --staged'   # INDEXED modifs above HEAD (WD not included).
@@ -83,14 +83,14 @@ alias grl='git rev-list -n 1 HEAD --'            # (+FILE_PATH) Get the ID of th
 
 
 ########## final references ##########
-# git init                       # Initialize repository. Add --bare for "storage facility" without a working dir.
-# git remote                     # Use it alone or with [add, rm] +repo; -v for details.
-# git rm                         # Untrack files; "git rm --cached" can unstage untracked-files.
-# git mv                         # Rename tracked-files.
-# git reflog                     # Revive lost snapshots.
-# git archive                    # Removes the .git dir; it gives you a simple snapshot to share/backup,
-                                 # ex: git archive master --format=zip --output=../website-20170130.zip
-# git push --set-upstream origin # Usually the very first push to origin.
+# git init                    # Initialize repository. Add --bare for "storage facility" without a working dir.
+# git remote                  # Use it alone or with [add, rm] +repo; -v for details.
+# git rm                      # Untrack files; "git rm --cached" can unstage untracked-files.
+# git mv                      # Rename tracked-files.
+# git reflog                  # Revive lost snapshots.
+# git archive                 # Removes the .git dir; it gives you a simple snapshot to share/backup,
+                              # ex: git archive master --format=zip --output=../website-20170130.zip
+# git push -u origin [branch] # Usually the very first push to origin.
 
 
 ########## reference: Insert a commit before the root commit in Git ##########
