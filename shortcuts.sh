@@ -37,7 +37,7 @@ alias gtree='git ls-tree --full-tree --name-only -r HEAD' # show tracked files
 alias gco='git checkout'                    # Jump to branches or IDs. Add '-b' to create a new branch; (+file) remove changes from WD;
                                             # with -f, throw away local changes (WD & INDEX), like <gxj>.
 alias gb='git branch'                       # (opc BranchName) Show local branches; all (-a);
-                                            # rename (-m) OLD NEW; delete it (-d, -D) or <god> for remote.
+                                            # rename (-m) OLD NEW; delete it (-d, -D).
 alias gm='git merge'                        # (+COMMIT) Merge current branch to COMMIT (fast-forward) or use --no-ff flag.
 alias goa='git push -u origin'              # (+Branch) Goes to origin and upload new branches.
 alias god='git push --delete origin'        # (+tagName) Goes to origin and delete tags/branches.
