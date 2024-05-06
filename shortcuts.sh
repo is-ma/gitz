@@ -74,7 +74,8 @@ alias gcf='git clean -f'                         # Removes custom/all untracked 
 alias gr='git reset'                             # (+stagedFile, empty) Unstage stagedFile or all files (--mixed by default).
 alias gxb='git reset HEAD^ --soft'               # Go back 1 commit, keeps modifications in INDEX.
 alias gxj='git reset --hard'                     # (+ID, empty) Jumps to ID or removes modified files in WD & INDEX.
-alias gob='git push origin +origin/HEAD^:master' # Go back 1 commit in origin/master.
+alias gpf_main='git push -f origin main'         # Force repository to mimic current branch.
+alias gpf_master='git push -f origin master'     # Force repository to mimic current branch.
 alias grv='git revert'                           # (+ID ID2 ID3) Creates a new commit reverting IDs (or HEAD).
 alias grl='git rev-list -n 1 HEAD --'            # (+FILE_PATH) Get the ID of the deleted commit; then «gco ID^».
 # git checkout [--] (.|file)                     # Un-do file changes in WD (use -- when it doesn't work, paths for example),
