@@ -83,13 +83,14 @@ alias grl='git rev-list -n 1 HEAD --'            # (+FILE_PATH) Get the ID of th
 
 
 ########## final references ##########
-# git init            # Initialize repository. Add --bare for "storage facility" without a working dir.
-# git remote          # Use it alone or with [add, rm] +repo; -v for details.
-# git rm              # Untrack files; "git rm --cached" can unstage untracked-files.
-# git mv              # Rename tracked-files.
-# git reflog          # Revive lost snapshots.
-# git archive         # Removes the .git dir; it gives you a simple snapshot to share/backup,
-                      # ex: git archive master --format=zip --output=../website-20170130.zip
+# git init                       # Initialize repository. Add --bare for "storage facility" without a working dir.
+# git remote                     # Use it alone or with [add, rm] +repo; -v for details.
+# git rm                         # Untrack files; "git rm --cached" can unstage untracked-files.
+# git mv                         # Rename tracked-files.
+# git reflog                     # Revive lost snapshots.
+# git archive                    # Removes the .git dir; it gives you a simple snapshot to share/backup,
+                                 # ex: git archive master --format=zip --output=../website-20170130.zip
+# git push --set-upstream origin # Usually the very first push to origin.
 
 
 ########## reference: Insert a commit before the root commit in Git ##########
