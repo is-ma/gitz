@@ -48,7 +48,7 @@ alias grbc='git rebase --continue'          # Popular rebase option.
 alias gri='git rebase -i'                   # (+COMMIT/--root) Redesign history interactively from COMMIT.
 alias gria='git rebase -i --autosquash'     # (+COMMIT/--root) Uses 'squash! msg' or 'fixup! msg' to format <gri>.
 alias gp='git push && git push --tags'      # Pushes commits and tags in one command.
-alias gpf='git push -f && git push --tags'  # Force push to mimic current branch.
+alias gpf='git push -f && git push --tags'  # Mimic current branch.
 alias gf='git fetch -p'                     # Usage: gf john (-p prune tracking); -a to fetch all; uses "origin" by default.
 # git push <remote> <branch>                # Push branch to remote.
 # git pull                                  # Equivalent of git fetch (get remote data) and git merge (merge to your branch).
@@ -75,8 +75,6 @@ alias gcf='git clean -f'                         # Removes custom/all untracked 
 alias gr='git reset'                             # (+stagedFile, empty) Unstage stagedFile or all files (--mixed by default).
 alias gxb='git reset HEAD^ --soft'               # Go back 1 commit, keeps modifications in INDEX.
 alias gxj='git reset --hard'                     # (+ID, empty) Jumps to ID or removes modified files in WD & INDEX.
-alias gpf_main='git push -f origin main'         # Force repository to mimic current branch.
-alias gpf_master='git push -f origin master'     # Force repository to mimic current branch.
 alias grv='git revert'                           # (+ID ID2 ID3) Creates a new commit reverting IDs (or HEAD).
 alias grl='git rev-list -n 1 HEAD --'            # (+FILE_PATH) Get the ID of the deleted commit; then «gco ID^».
 # git checkout [--] (.|file)                     # Un-do file changes in WD (use -- when it doesn't work, paths for example),
