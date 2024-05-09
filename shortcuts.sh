@@ -39,8 +39,8 @@ alias gco='git checkout'                    # Jump to branches or IDs. Add '-b' 
 alias gb='git branch'                       # (opc BranchName) Show local branches; all (-a);
                                             # rename (-m) OLD NEW; delete it (-d, -D).
 alias gm='git merge'                        # (+COMMIT) Merge current branch to COMMIT (fast-forward) or use --no-ff flag.
-alias goa='git push -u origin'              # (+Branch) Goes to origin and upload new branches.
-alias god='git push --delete origin'        # (+tagName) Goes to origin and delete tags/branches.
+alias gob='git push -u origin'              # (+Branch) Goes to origin and upload new branches.
+alias god='git push --delete origin'        # (+tagName/branch) Goes to origin and delete tags/branches.
 alias grb='git rebase'                      # (+NEW_BASE) Rebase current branch on top of NEW_BASE.
 alias grbo='git rebase --onto'              # (+NEW_BASE +OLD_BASE) Mount current branch on top of NEW_BASE (from OLD_BASE);
 					    # you can also use it to remove some commits from the current branch (without «gri»).
