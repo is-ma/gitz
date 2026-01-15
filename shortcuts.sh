@@ -77,6 +77,7 @@ alias gxb='git reset HEAD^ --soft'               # Go back 1 commit, keeps modif
 alias gxj='git reset --hard'                     # (+ID, empty) Jumps to ID or removes modified files in WD & INDEX.
 alias grv='git revert'                           # (+ID ID2 ID3) Creates a new commit reverting IDs (or HEAD).
 alias grl='git rev-list -n 1 HEAD --'            # (+FILE_PATH) Get the ID of the deleted commit; then «gco ID^».
+alias gbk='git checkout'                         # (+ID -- FILE) Recover FILE from ID into current WD & INDEX.
 # git checkout [--] (.|file)                     # Un-do file changes in WD (use -- when it doesn't work, paths for example),
                                                  # or use '.' to undo all WD (same as git checkout -f or git reset --hard).
 
