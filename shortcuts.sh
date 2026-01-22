@@ -44,11 +44,12 @@ alias gob='git push -u origin'              # (+Branch) Goes to origin and uploa
 alias god='git push --delete origin'        # (+tagName/branch) Goes to origin and delete tags/branches.
 alias grb='git rebase'                      # (+NEW_BASE) Rebase current branch on top of NEW_BASE.
 alias grbo='git rebase --onto'              # (+NEW_BASE +OLD_BASE) Mount current branch on top of NEW_BASE (from OLD_BASE);
-					    # you can also use it to remove some commits from the current branch (without «gri»).
+					                                  # you can also use it to remove some commits from the current branch (without «gri»).
 alias grbc='git rebase --continue'          # Popular rebase option.
 alias gri='git rebase -i'                   # (+COMMIT/--root) Redesign history interactively from COMMIT.
 alias gria='git rebase -i --autosquash'     # (+COMMIT/--root) Uses 'squash! msg' or 'fixup! msg' to format <gri>.
 alias gp='git push && git push --tags'      # Pushes commits and tags in one command.
+alias gpu='git pull --rebase'               # Pull first, rebase current work on top of it.
 alias gpf='git push -f && git push --tags'  # Mimic current branch.
 alias gf='git fetch -p'                     # Usage: gf john (-p prune tracking); -a to fetch all; uses "origin" by default.
 # git push <remote> <branch>                # Push branch to remote.
