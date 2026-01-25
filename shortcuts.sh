@@ -24,22 +24,32 @@ alias gl='git log --oneline --graph --decorate --all -n 10'           # Top 10, 
 alias gll='git log --oneline --graph --decorate --all'                # All git log, complete info.
 alias gl3='git log --oneline -n 3'                                    # Top 3, simplified.
 alias gl3s='git log --oneline --graph --decorate --all -n 3 --stat'    # Top 3, with stats.
+alias gln='git log --oneline -n'                                      # Generic: gln 5 shows last 5 commits.
+alias gs='git status -s'                   # Show untracked files and differences between HEAD & WD, WD & INDEX.
+alias gst='git status'                     # Full status output.
 alias gd='git diff'             # Modifs on tracked files (WD, not staged) above HEAD. Usages: gd; gd <OLD> <NEW>.
 alias gds='git diff --staged'   # INDEXED modifs above HEAD (WD not included).
 alias gdh='git diff HEAD'       # Modifs [WD+INDEX] above HEAD.
+alias gdl='git diff HEAD~'      # Show changes from last commit.
 alias gsh='git show'            # (+ID|<none>) Show commit modifications on ID/HEAD.
 alias gfh='git log -p'          # (+filename) Outputs the file history patches for each log entry.
 alias gch='git log --follow --' # (+filename) List all commits that changed a specific file.
 alias gg='git grep'             # "search", searches inside your repository; -e se[aeiou]rch, use regexp to search.
 alias gtree='git ls-tree --full-tree --name-only -r HEAD' # show tracked files
+alias grv='git remote -v'       # Show remote repositories with URLs.
 
 
 ########## branches ##########
 alias gco='git checkout'                    # Jump to branches or IDs. Add '-b' to create a new branch; (+file) remove changes from WD;
                                             # with -f, throw away local changes (WD & INDEX), like <gxj>.
+alias gsw='git switch'                      # Modern alternative to checkout for switching branches (git 2.23+).
+alias gswc='git switch -c'                  # Create new branch and switch to it (modern).
 alias gb='git branch'                       # (opc BranchName) Show local branches; all (-a);
                                             # rename (-m) OLD NEW; delete it (-d, -D).
+alias gbd='git branch -d'                   # Delete a branch (safe).
+alias gbD='git branch -D'                   # Force delete a branch.
 alias gm='git merge'                        # (+COMMIT) Merge current branch to COMMIT (fast-forward) or use --no-ff flag.
+alias gcp='git cherry-pick'                 # Apply specific commits from another branch.
 alias gob='git push -u origin'              # (+Branch) Goes to origin and upload new branches.
 alias god='git push --delete origin'        # (+tagName/branch) Goes to origin and delete tags/branches.
 alias grb='git rebase'                      # (+NEW_BASE) Rebase current branch on top of NEW_BASE.
@@ -60,6 +70,9 @@ alias gf='git fetch -p'                     # Usage: gf john (-p prune tracking)
 alias gss='git stash save'              # Save uncommited changes (adds an ID message).
 alias gsl='git stash list'              # List your stashed stuff.
 alias gsp='git stash pop'               # Takes (and delete) the top of the list stash.
+alias gsa='git stash apply'             # Apply the top stash without removing it from list.
+alias gsd='git stash drop'              # Drop (delete) the top stash.
+alias gsc='git stash clear'             # Remove all stashed entries.
 
 
 ########## config ##########
@@ -80,6 +93,8 @@ alias gxj='git reset --hard'                     # (+ID, empty) Jumps to ID or r
 alias grv='git revert'                           # (+ID ID2 ID3) Creates a new commit reverting IDs (or HEAD).
 alias grl='git rev-list -n 1 HEAD --'            # (+FILE_PATH) Get the ID of the deleted commit; then «gco ID^».
 alias gbk='git checkout'                         # (+ID -- FILE) Recover FILE from ID into current WD & INDEX.
+alias grs='git restore'                          # Modern way to discard changes in working directory (git 2.23+).
+alias grss='git restore --staged'                # Unstage files (modern).
 # git checkout [--] (.|file)                     # Un-do file changes in WD (use -- when it doesn't work, paths for example),
                                                  # or use '.' to undo all WD (same as git checkout -f or git reset --hard).
 
