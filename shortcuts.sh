@@ -37,6 +37,7 @@ alias gch='git log --follow --' # (+filename) List all commits that changed a sp
 alias gg='git grep'             # "search", searches inside your repository; -e se[aeiou]rch, use regexp to search.
 alias gtree='git ls-tree --full-tree --name-only -r HEAD' # show tracked files
 alias grv='git remote -v'       # Show remote repositories with URLs.
+alias gtest='ssh -T git@github.com' # Test SSH connection to GitHub.
 
 
 ########## branches ##########
