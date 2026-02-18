@@ -38,7 +38,24 @@ alias gg='git grep'             # "search", searches inside your repository; -e 
 alias gtree='git ls-tree --full-tree --name-only -r HEAD' # show tracked files
 alias grv='git remote -v'       # Show remote repositories with URLs.
 alias gtest='ssh -T git@github.com' # Test SSH connection to GitHub.
-
+gcheck() {                      # Run it from ~/.is-ma to show info about your repos
+    for d in */; do
+        if [ -d "$d/.git" ]; then
+            cd "$d"
+            # Captura cambios locales (modified/untracked) y commits sin push
+            local status=$(git status --short)
+            local unpushed=$(git cherry -v 2>/dev/null)
+            if [ -n "$status" ] || [ -n "$unpushed" ]; then
+                echo -e "\033[0;31m[!] ${d%/}\033[0m" # Rojo si falta respaldo
+                [ -n "$status" ] && echo "    -> Cambios locales pendientes"
+                [ -n "$unpushed" ] && echo "    -> Commits sin subir (push)"
+            else
+                echo -e "\033[0;32m[✓] ${d%/}\033[0m" # Verde si está al día
+            fi
+            cd ..
+        fi
+    done
+}
 
 ########## branches ##########
 alias gco='git checkout'                    # Jump to branches or IDs. Add '-b' to create a new branch; (+file) remove changes from WD;
