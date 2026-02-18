@@ -37,26 +37,17 @@ alias gch='git log --follow --' # (+filename) List all commits that changed a sp
 alias gg='git grep'             # "search", searches inside your repository; -e se[aeiou]rch, use regexp to search.
 alias gtree='git ls-tree --full-tree --name-only -r HEAD' # show tracked files
 alias grv='git remote -v'       # Show remote repositories with URLs.
-<<<<<<< HEAD
 alias gtest='ssh -T git@github.com' # Test SSH connection to GitHub.
-=======
-                                
->>>>>>> 53c45f1 (gcheck)
-gcheck() {                      # Run it from ~/.is-ma to show info about your repos
+function gcheck {               # Run it from ~/.is-ma to show info about your repos
     for d in */; do
         if [ -d "$d/.git" ]; then
-            cd "$d"
-            # Captura cambios locales (modified/untracked) y commits sin push
-            local status=$(git status --short)
-            local unpushed=$(git cherry -v 2>/dev/null)
-            if [ -n "$status" ] || [ -n "$unpushed" ]; then
-                echo -e "\033[0;31m[!] ${d%/}\033[0m" # Rojo si falta respaldo
-                [ -n "$status" ] && echo "    -> Cambios locales pendientes"
-                [ -n "$unpushed" ] && echo "    -> Commits sin subir (push)"
-            else
-                echo -e "\033[0;32m[✓] ${d%/}\033[0m" # Verde si está al día
+            # Capturamos el status con color forzado
+            local status=$(git -C "$d" -c color.status=always status -s)
+            
+            if [[ -n "$status" ]]; then
+                echo -e "\n--- ./$d"
+                echo "$status"
             fi
-            cd ..
         fi
     done
 }
