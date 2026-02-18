@@ -45,7 +45,7 @@ function gcheck {               # Run it from ~/.is-ma to show info about your r
             local status=$(git -C "$d" -c color.status=always status -s)
             
             if [[ -n "$status" ]]; then
-                echo -e "\n--- ./$d"
+                echo -e "\n[ $d ]"
                 echo "$status"
             fi
         fi
